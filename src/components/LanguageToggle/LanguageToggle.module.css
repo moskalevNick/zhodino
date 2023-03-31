@@ -1,0 +1,66 @@
+.switch {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 209px;
+  height: 100px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.shortSwitch {
+  width: 32px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.firstLabel {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-20%, -50%);
+  color: #fff;
+  stroke: #fff;
+  text-decoration: underline;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.secondLabel {
+  position: absolute;
+  top: 50%;
+  right: 20%;
+  transform: translate(20%, -50%);
+  color: #fff;
+  stroke: #fff;
+  text-decoration: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+input:checked + .slider > .firstLabel {
+  color: #fff;
+  stroke: #fff;
+  text-decoration: none;
+}
+
+input:checked + .slider > .secondLabel {
+  color: #fff;
+  stroke: #fff;
+  text-decoration: underline;
+}
