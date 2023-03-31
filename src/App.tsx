@@ -29,8 +29,8 @@ function App() {
     } else {
       i18n.changeLanguage('ru');
     }
-    console.log(isRus);
   }, [currentLanguage]);
+  console.log(isRus);
 
   return (
     <BrowserRouter>
