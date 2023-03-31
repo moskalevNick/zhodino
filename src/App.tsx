@@ -29,6 +29,7 @@ function App() {
     } else {
       i18n.changeLanguage('ru');
     }
+    console.log(isRus);
   }, [currentLanguage]);
 
   return (
